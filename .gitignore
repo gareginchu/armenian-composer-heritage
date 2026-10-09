@@ -1,2 +1,6 @@
 deploy/
 .venv/
+.claude/
+.env
+.env.*
+!.env.example
