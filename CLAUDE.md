@@ -12,8 +12,8 @@ The joint "Voice & Hand" thesis from the earlier iteration of this file is super
 
 | Archive | Repo | URL (once deployed) | Design direction | Local folder |
 |---|---|---|---|---|
-| Komitas | `gareginchu/komitas-archive` | `https://gareginchu.github.io/komitas-archive/` | **The Reading Room** — bone paper, ink, candle-gold. Classical serif + Armenian display. Sheet music as centerpiece. | `C:\Users\gareg\OneDrive\Desktop\komitas-archive` |
-| Aram Khachaturian | `gareginchu/khachaturian-archive` | `https://gareginchu.github.io/khachaturian-archive/` | **Modernist Poster** — cool white, deep charcoal, chalk-orange. Neue Haas Grotesk Display + working serif. Photo-essay pacing. | `C:\Users\gareg\OneDrive\Desktop\khachaturian-archive` |
+| Komitas | `gareginchu/komitas-archive` | `https://gareginchu.github.io/komitas-archive/` | **The Reading Room** — bone paper, ink, candle-gold. Classical serif + Armenian display. Sheet music as centerpiece. | `<archive-root>/komitas-archive` |
+| Aram Khachaturian | `gareginchu/khachaturian-archive` | `https://gareginchu.github.io/khachaturian-archive/` | **Modernist Poster** — cool white, deep charcoal, chalk-orange. Neue Haas Grotesk Display + working serif. Photo-essay pacing. | `<archive-root>/khachaturian-archive` |
 
 Each archive has its own `CLAUDE.md` at its repo root. Read it before working there.
 
@@ -23,7 +23,7 @@ Each archive has its own `CLAUDE.md` at its repo root. Read it before working th
 
 The archives are seeded from two CD-ROMs on disk:
 
-- **Komitas CD** — `C:\Users\gareg\OneDrive\Desktop\komitas`
+- **Komitas CD** — `<komitas-cd-root>`
   - `data/pdf/` — 34 sheet-music PDFs (Antuni, Krunk, Garun a, Hov areq, Divine Liturgy, biographies of his circle)
   - `data/sound/music/` — 574 audio files
   - `data/video/clips/` — 102 video clips
@@ -32,7 +32,7 @@ The archives are seeded from two CD-ROMs on disk:
   - `data/images/bigs/text/` — 43 text images
   - `data/text/{am,en,ru}/*.xml` — trilingual metadata (menu, timeline, photo, sound, video, text)
 
-- **Aram Khachaturian CD** — `C:\Users\gareg\OneDrive\Desktop\Aram Khachatrian`
+- **Aram Khachaturian CD** — `<khachaturian-cd-root>`
   - `audio/` — 47 audio (including Khachaturian's own recorded speeches, Sabre Dance recordings, symphonies, concertos)
   - `video/` — 14 FLV videos (Adagio, Lezginka, Masquerade, Spartacus, trilingual documentaries)
   - `images/photobook/medium/` — 495 photobook images
@@ -90,7 +90,7 @@ R2 credentials belong in the user's secrets store, not the repo.
 
 1. **Phase 0 (current).** Keep the existing site untouched at the current URL while the two archives are being built.
 2. **Phase 1.** Once both archives are live and stable, replace this repo's home page with a two-tile portal that links out. Remove `aram.html`, `komitas.html`, `gallery.html`, `media.html`, `archive.html`. Keep the assets and audio folders as archived downloads for one release cycle, then delete.
-3. **Phase 2.** Add a small "About the project" page (Maggie's role, editorial policy, contact). No content ingestion here.
+3. **Phase 2.** Add a small "About the project" page (the collection owner's role, editorial policy, contact). No content ingestion here.
 
 ---
 

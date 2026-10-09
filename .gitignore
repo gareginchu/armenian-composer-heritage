@@ -4,3 +4,4 @@ deploy/
 .env
 .env.*
 !.env.example
+CLAUDE.local.md
